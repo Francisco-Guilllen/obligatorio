@@ -1,0 +1,832 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Marcellus", serif;
+}
+
+.contenedor{
+    margin: auto;
+    max-width: 90%;
+}
+
+h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+header{
+    background-color: rgb(38, 41, 38);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 1.5em;
+}
+
+header img{
+    width: 2em;
+}
+
+
+.nav-links {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .iconomenu{
+    display: block;
+  }
+
+
+section{
+    margin: 40px 0px;
+}
+
+.portada{
+    background-image: url(imgs/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    align-content: end;
+    padding-bottom: 50px;
+    margin-top: 0px;
+}
+
+.portada h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.portada p{
+    display: none;
+}
+
+.registro{
+    margin-bottom: 40px;
+}
+
+.registrarse{
+    background-color: rgb(38, 41, 38);
+    text-align: center;
+    border-radius: 30px;
+
+}
+
+.registrarse h2{
+    color: white;
+    padding: 20px;
+}
+
+.registrarse p{
+    color: white;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.registrotablet{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 40px;
+}
+
+input, select{
+    padding: 1em 3em;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+
+label{
+    padding: 20px 0px;
+    font-size: 0.8em;
+}
+
+button{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 1em;
+    padding: 10px 30px;
+}
+
+button:hover{
+    background-color: rgb(67, 68, 67);
+    transition: 0.2s;
+    border-radius: 20px;
+}
+
+.wpp {
+    background-image: url(imgs/wpp.png);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+.fotelas{
+    display: none;
+}
+
+.data div{
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+  }
+
+.d1{
+    background-image: url(imgs/foto1.jpg);
+    background-size: cover;
+}
+
+.d2{
+    background-image: url(imgs/link1.webp);
+    background-size: cover;
+}
+
+.link1{
+    background-color: rgb(38, 41, 38);
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.link1 p{
+    margin-bottom: 20px;
+}
+
+.d4{
+    background-image: url(imgs/foto4.jpg);
+    background-size: cover;
+}
+
+.d4 p{
+    display: none;
+}
+
+.d5{
+    background-image: url(imgs/foto5.webp);
+    background-size: cover;
+}
+
+.d6{
+    display: none;
+}
+
+.d5 {
+    aspect-ratio: 1 / 1;
+    background-position: center;
+  }
+
+
+.fondoprod{
+    background-color: rgb(38, 46, 38);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.productos img{
+    width: 100%;
+}
+
+.productos{
+    text-align: center;
+    padding: 20px;
+}
+
+.productos h3{
+    color: white;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.productos p{
+    color: white;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0px 20px;
+}
+
+.prodd img{
+    display: none;
+}
+
+.obrasweb{
+    display: none;
+  }
+
+footer{
+    background-color: rgb(157, 182, 180);
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1em;
+    padding: 40px 0px;
+    align-items: center;
+}
+
+footer img{
+    margin-top: 30px;
+    width: 1.5em;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-between;
+    max-width: 40%;
+}
+
+
+
+@media (min-width: 768px) {
+    .nav-links {
+      display: inline-block;
+    }
+
+    .nav-links a:hover{
+        color: rgb(194, 191, 168);
+        transition: 0.2s;
+    }
+  
+    .iconomenu{
+      display: none;
+    }
+  
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 30px;
+    
+    }
+  
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .wpp {
+        bottom: 50px;
+      }
+
+    .portada{
+        height: 50vh;
+    }
+
+    .portada h1{
+        width: 80%;
+        text-align: start;
+    }
+
+    .registrotablet {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        
+        padding: 10px;
+      }
+
+    input, select{
+        width: 100%;
+        margin-right: 15px;
+    }
+
+    .registrotablet button{
+        margin-bottom: 15px;
+    }
+
+   
+    .data {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        /* tus configuraciones actuales */
+      }
+
+      .d2{
+        background-image: url(imgs/foto6.jpg);
+        background-size: cover;
+      }
+
+      .link1{
+        background-image: url(imgs/link1.webp);
+        background-size: cover;
+        background-position: center;
+        color: black;
+      }
+
+      .link1 button{
+        color: black;
+        border: 2px solid black;
+      }
+
+      .link1 button:hover{
+        color: white;
+    }
+
+      .d4 p{
+        display: block;
+        color: white;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        max-width: 90%;
+    }
+
+    strong{
+        font-size: 1.1em;
+    }
+
+      .d6{
+        display: block;
+        background-image: url(imgs/foto5.jpg);
+        background-size: cover;
+
+      }
+    
+      .data div:nth-child(1) { grid-column: 1; grid-row: 1; } /* d1 */
+      .data div:nth-child(2) { grid-column: 1; grid-row: 2; } /* d2 */
+      .data div:nth-child(3) { grid-column: 2; grid-row: 1 / span 2; } /* link1 */
+      .data div:nth-child(4) { grid-column: 1 / span 2; grid-row: 3; } /* d4 */
+      .data div:nth-child(5) { grid-column: 1 / span 1; grid-row: 4; } /* d5 */
+      .data div:nth-child(6) { grid-column: 2 / span 1; grid-row: 4; } /* d6 */
+
+
+      h1{
+        margin: 50px 0px 30px;
+        text-align: start;
+      }
+
+      .obras {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+      .columna div{
+        text-align: start;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 5px;
+      }
+
+      .productos p{
+        padding: 0px;
+        text-align: start;
+      }
+      
+
+      footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 40px 20px;
+        gap: 30px;  
+      }
+    
+      footer h3 {
+        margin: 0;
+      }
+    
+      .redes {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        max-width: none;
+        margin: 0px;
+        padding: 0px 20px 20px; /*Le pongo 20 px de padding botom porque los iconos que elegi tienen espacio vacio arriba y sinceramente no se si es un problema mio o de las imagenes que elegi*/
+      }
+    }
+
+    
+
+
+    @media (min-width: 1024px) {
+
+        header{
+            padding-top: 20px;
+        }
+
+        .nav-links{
+           font-size: 1em;
+        }
+
+        .nav-links a{
+            padding-right: 1em;
+        }
+
+        header img{
+            width: 3em;
+        }
+
+        .wpp {
+            bottom: 50px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+          }
+
+        .portada{
+            height: 60vh;
+            background-position: center;
+            padding-bottom: 50px;
+            margin-bottom: 100px;
+        }
+
+        .dataportada{
+            max-width: 80%;
+        }
+
+        .portada h1{
+            align-items: start;
+            margin: auto;
+            max-width: 60%;
+            font-size: 2em;
+            padding-bottom: 20px;
+        }
+
+        .portada p{
+            margin: auto;
+            display: block;
+            color: white;
+            max-width: 60%;
+            font-size: 1.1em;
+            padding-bottom: 50px;
+    
+        }
+
+        .registro {
+            position: absolute;
+            top: 380px; 
+            right: 100px;
+          }
+
+          .registrotablet {
+            flex-direction: column;
+          }
+
+          .registrarse{
+            font-size: 0.7em;
+            padding: 10px;
+          }
+
+          .registrarse h2{
+            padding: 15px 0px;
+          }
+
+          .registrarse p{
+            padding: 0px 10px;
+          }
+
+          .registrarse button{
+            padding: 5px 0px;
+            margin: 5px 0px 10px;
+            width: 100%;
+          }
+
+          input, select{
+            margin: 2px;
+          }
+
+        .fotelas p{
+            font-size: 1em;
+        }
+
+        .fotelas button{
+            font-size: 0.8em;
+            margin-top: 20px;
+            color: black;
+            border: 2px solid black;
+        }
+
+        .fotelas button:hover{
+            color: white;
+        }
+
+
+        .datadiv3{
+            font-size: 0.8em;
+        }
+
+        .tablet{
+            display: none;
+        }
+
+        .contenedor{
+            max-width: 100%;
+        }
+
+        .data{
+            display: none;
+        }
+
+        .fotelas{
+            display: block;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+          }
+          
+          
+          .div1{
+            background-image: url(imgs/foto1.jpg);
+            background-position: center;
+            background-size: cover;
+            aspect-ratio: 1 / 1;
+          }
+          
+          .div2{
+            background-image: url(imgs/link1.webp);
+            background-position: center;
+            background-size: cover;
+            grid-row: span 2;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            align-content: center;
+            font-size: 1.5em;
+            }
+          
+          .div3{
+            display: block;
+            background-image: url(imgs/foto4.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-column: span 2;
+            color: white;
+            text-align: left;
+            align-content: end;
+            font-size: 1.5em;
+            padding: 1em;
+          }
+          
+          .div4{
+            background-image: url(imgs/foto4.jpg);
+            background-position: center;
+            background-size: cover;
+            aspect-ratio: 1 / 1;
+          }
+          
+          .div5{
+            display: block;
+            background-image: url(imgs/foto6.jpg);
+            background-position: center;
+            background-size: cover;
+          }
+          
+          .div6{
+            background-image: url(imgs/link1.webp);
+            background-position: center;
+            background-size: cover;
+            aspect-ratio: 1 / 1;
+          }
+          .div7{
+            background-image: url(imgs/foto5.webp);
+            background-position: center;
+            background-size: cover;
+            aspect-ratio: 1 / 1;
+          }
+          
+          .div8{
+            background-image: url(imgs/foto5.jpg);
+            background-position: center;
+            background-size: cover;
+            aspect-ratio: 1 / 1;
+          }
+
+        .fondoprod{
+            border-radius: 20px;
+            max-width: 28%;
+            margin: 10px 10px;
+            position: relative;
+          }
+
+          .rectangulo{
+            visibility: visible;
+            background-color: rgb(160, 151, 76);
+            color: white;
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            right: 0px;
+            top: 30px;
+            text-align: center;
+            align-content: center;
+        }
+
+
+        .obrasweb{
+            display: block;
+          }
+
+        .obras {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          
+        .prodd img{
+            display: block;
+            width: 100%;
+        }
+
+        .productos{
+            text-align: start;
+          }
+    }
+    
+
+    /*Para pantallas de 1024px ya alcanzaba, pero se veia muy chico en formtos más grandes, por eso estos minis ajustes.*/
+
+
+    @media (min-width: 1440px){
+
+
+        .portada h1{
+            font-size: 3em;
+        }
+
+        .portada p{
+            font-size: 1.5em;
+        }
+
+          .registrarse{
+            font-size: 1em;
+          }
+
+          .registrarse h2{
+            padding: 20px 0px 5px;
+          }
+
+          .registrarse p{
+            padding: 10px 10px;
+          }
+
+          .registrarse button{
+            margin: 5px 0px 0px;
+            margin-bottom: 20px;
+          }
+
+          input, select{
+            margin: 4px;
+          }
+
+        .fotelas button{
+            margin-top: 30px;
+        }
+    }
+
+    @media (min-width: 2560px){
+
+        header{
+            padding: 50px 0px;
+        }
+
+        header img{
+            width: 5em;
+            margin-left: 100px;
+        }
+
+        .nav-links{
+            font-size: 2em;
+         }
+
+         .wpp {
+            bottom: 70px;
+            right: 50px;
+            width: 120px;
+            height: 120px;
+          }
+
+          .portada{
+            margin-bottom: 200px;
+          }
+
+         .portada h1{
+            font-size: 5em;
+        }
+
+        .portada p{
+            font-size: 3em;
+        }
+
+        .registro {
+            top: 850px; 
+            right: 200px;
+          }
+
+        .registrarse{
+            font-size: 1.5em;
+            padding: 20px;
+          }
+
+          .registrarse h2{
+            padding: 30px 0px 5px;
+          }
+
+          .registrarse button{
+            padding: 10px;
+            margin: 5px 0px 0px;
+            margin-bottom: 20px;
+          }
+
+          input, select{
+            margin: 8px;
+          }
+
+        .fotelas{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .fotelas p{
+            font-size: 3em;
+        }
+
+        .fotelas button{
+            font-size: 2.5em;
+            border: 3px solid;
+        }
+
+        .datadiv3{
+            font-size: 1.5em;
+            padding: 20px;
+        }
+
+        .fondoprod{
+            font-size: 2em;
+        }
+
+        .rectangulo{
+            top: 60px;
+            width: 170px;
+            height: 70px;
+    
+        }
+
+        footer{
+            margin-top: 150px;
+        }
+    }
+
+        
+        
+
+
+
+
+        
+ 
+
+
+
+
+
+      
+
+
+
+     
+    
+
